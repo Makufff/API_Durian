@@ -12,7 +12,7 @@ import cv2
 app = FastAPI()
 
 # MODEL = tf.keras.models.load_model(".\model.h5")
-interpreter = tflite.Interpreter("model.tflite")
+interpreter = tflite.Interpreter("static/model.tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
