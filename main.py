@@ -94,10 +94,10 @@ async def predict(
     return {
         'class': predicted_class,
         'confidence': float(confidence),
-        'comment_1' : dis1 ,
-        'comment_2' : dis2 ,
-        'comment_3' : dis3 ,
-        'comment_4' : dis4 ,
+        'comment_1' : CLASS_DICT[predicted_class] ,
+        'comment_2' : CLASS_DICT[predicted_class] ,
+        'comment_3' : CLASS_DICT[predicted_class] ,
+        'comment_4' : CLASS_DICT[predicted_class] 
     }
 
 if __name__ == "__main__":
